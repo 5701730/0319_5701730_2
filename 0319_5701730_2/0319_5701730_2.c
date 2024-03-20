@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-long long power_liter(long x, int n) {
+long long power_liter(long x, int n) {//반복 함수를 이용
     int i;
     long result = 1;
     for (i = 0; i < n; i++)
@@ -9,7 +9,7 @@ long long power_liter(long x, int n) {
     return result;
 }
 
-long long power_rec(long x, int n) {
+long long power_rec(long x, int n) {//재귀 함수를 이용
     if (n == 0)
         return 1;
     else if (n % 2 == 0)
